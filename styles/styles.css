@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color:rgb(255, 255, 255, 0.85);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    font-family: inherit;   
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 {
+    color: #1c1c1c;
+}
+
+pre {
+    white-space: pre-line;
+}
+
+img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    margin: 1em;
+}
+
+img:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}  
+  
+.title_descrition {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: self-start;
+    background: white;
+}
+
+#hotel_title {
+    color: #1c1c1c;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+#hotel_description {
+    font-style: italic;
+    font-size:larger;
+}
+
+#hotel_navigation {
+    list-style-type: none;
+    position: sticky;
+    background: white;
+    top: 0;
+}
+
+#hotel_navigation_list {
+    display: flex;
+    align-items: flex-start;
+}
+
+#hotel_navigation_item {      
+    display: inline;
+    white-space: nowrap;
+    color: #1c1c1c;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+#hotel_navigation_item a {    
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+    color: #1c1c1c;
+    font-size: large;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+#hotel_navigation_item a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#hotel_navigation_item a:hover::after {
+    background-color: #F252F7;
+}
+
+.hotel_gallery_reviews {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+#hotel_icon {
+    width: 50%;
+    margin: 2em;
+}
+
+.reviews {
+    display: flex;
+    flex-flow: column;
+    align-self: flex-start;
+    margin: 2em;
+    padding: 2em;
+    border: #1c1c1c;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2em;
+}
+
+.reviews h2 {
+    margin-bottom: 1em;
+}
+
+.reviews article {
+    margin-bottom: 2em;
+}
+
+.about {
+    padding: 4em 2em;
+}
+
+.about_paragraph {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.about_paragraph_text {
+   line-height: 1.5;
+   font-size: 1.4em;
+   font-weight: 500;
+   text-align: center;
+   margin-bottom: 5%;
+}
+
+.hotel_footer_horizontal_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #F96EF0;
+    padding: 2em;
+    color: white;
+}
+
+.hotel_footer_vertical_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 1em;
+}
+
+.hotel_footer_vertical_ul_li {
+    margin-top: 0.5em;
+}
+
+.hotel_footer_vertical_ul_li a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .about_paragraph {
+        flex-direction: column;
+    }
+    .hotel_gallery_reviews {
+        flex-direction: column;
+    }
+    #hotel_navigation_list {
+        flex-direction: column;
+    }
+}
+
+.about_paragraph:nth-child(even) {
+    background: #ce39b5;
+};
