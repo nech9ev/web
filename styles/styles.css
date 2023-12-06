@@ -99,7 +99,7 @@ img:hover {
     align-items: flex-start;
 }
 
-#hotel_navigation_item {      
+.hotel_navigation_item {      
     display: inline;
     white-space: nowrap;
     color: #1c1c1c;
@@ -108,7 +108,7 @@ img:hover {
     padding: 1em;
 }
 
-#hotel_navigation_item a {    
+.hotel_navigation_item a {    
     text-decoration: none;
     position: relative;
     white-space: nowrap;
@@ -119,7 +119,11 @@ img:hover {
     padding: 1em;
 }
 
-#hotel_navigation_item a::after {
+.hotel_navigation_item.current-menu-item {
+    background-color: #e0b2e1;
+}
+
+.hotel_navigation_item a::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -130,7 +134,7 @@ img:hover {
     transition: background-color 0.3s ease;
 }
 
-#hotel_navigation_item a:hover::after {
+.hotel_navigation_item a:hover::after {
     background-color: #F252F7;
 }
 
@@ -224,4 +228,14 @@ img:hover {
 
 .about_paragraph:nth-child(even) {
     background: #ce39b5;
-};
+}
+
+.time-load-information {
+    background-color: rgb(206, 154, 13);
+    padding: 30px;
+    font-weight: bold;
+}
+
+.time-load-title {
+    color: red;
+}
