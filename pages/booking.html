@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Бронирования посещения отеля Гранд Будапеш">
+  <meta name="keywords" content="бронирование Будапешт, Будапешт забровировать, Будапешт заезд, Будапешт приеду">
+  <meta name="author" content="Стефан Цвейг">
+
+  <title>Забронивать</title>
+  <link rel="icon" type="image/jpeg" href="../images/circle_logo.jpg" />
+
+  <link href="../styles/styles.css" rel="stylesheet">
+  <link href="../styles/booking.css" rel="stylesheet">
+  <script src="../script/load_time_measure.js"></script>
+  <script src="../script/active_navigation_item.js"></script>
+</head>
+
+<body>
+
+  <header style="position: sticky; top:0">
+    <div class="title_descrition">
+      <h1 id="hotel_title">Гранд Будапешт</h1>
+    </div>
+    <div class="wrapper">
+      <nav id="hotel_navigation">
+        <ul id="hotel_navigation_list">
+          <li class="hotel_navigation_item"><a href="index.html">Обзор</a></li>
+          <li class="hotel_navigation_item"><a href="rooms.html">Номера</a></li>
+          <li class="hotel_navigation_item"><a href="restaurant_and_bar.html">Ресторан и бар</a></li>
+          <li class="hotel_navigation_item"><a href="offers.html">Предложения</a></li>
+          <li class="hotel_navigation_item"><a href="reviews.html">Отзывы</a></li>
+          <li class="hotel_navigation_item"><a href="booking.html">Забронивать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <form id="tableForm">
+
+      <div class="form-group">
+        <label for="checkInTime">Время заезда</label>
+        <select id="checkInTime" name="checkInTime">
+          <option value="8:00">8:00</option>
+          <option value="10:00">10:00</option>
+          <option value="12:00">12:00</option>
+          <option value="14:00">14:00</option>
+          <option value="16:00">16:00</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="bedType">Тип кровати</label>
+        <select id="bedType" name="bedType">
+          <option value="Односпальная">Односпальная</option>
+          <option value="Двуспальная">Двуспальная</option>
+          <option value="Кинг-сайз">Кинг-сайз</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="checkInDate">Дата заезда</label>
+        <input type="date" id="checkInDate" name="checkInDate">
+      </div>
+
+      <div class="form-group">
+        <label for="checkOutDate">Дата отъезда</label>
+        <input type="date" id="checkOutDate" name="checkOutDate">
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Ваши пожелания</label>
+        <textarea id="comments" name="comments"></textarea>
+      </div>
+
+      <button type="submit">Забронивать</button>
+    </form>
+
+    <div id="tableContainer"></div>
+  </main>
+
+  <script src="../script/booking.js"></script>
+</body>
+
+</html>
