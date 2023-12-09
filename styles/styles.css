@@ -1,50 +1,138 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
-    background-color:rgb(255, 255, 255, 0.85);
+    line-height: 1;
+    background-color: rgb(255, 255, 255, 0.85);
+    font-family: Arial, sans-serif;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
-    font-family: inherit;   
+    font-family: inherit;
     padding: 0%;
     margin: 0%;
 }
@@ -66,8 +154,8 @@ img {
 
 img:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}  
-  
+}
+
 .title_descrition {
     display: flex;
     flex-direction: column;
@@ -84,7 +172,7 @@ img:hover {
 
 #hotel_description {
     font-style: italic;
-    font-size:larger;
+    font-size: larger;
 }
 
 #hotel_navigation {
@@ -99,7 +187,7 @@ img:hover {
     align-items: flex-start;
 }
 
-.hotel_navigation_item {      
+.hotel_navigation_item {
     display: inline;
     white-space: nowrap;
     color: #1c1c1c;
@@ -108,7 +196,7 @@ img:hover {
     padding: 1em;
 }
 
-.hotel_navigation_item a {    
+.hotel_navigation_item a {
     text-decoration: none;
     position: relative;
     white-space: nowrap;
@@ -177,15 +265,15 @@ img:hover {
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .about_paragraph_text {
-   line-height: 1.5;
-   font-size: 1.4em;
-   font-weight: 500;
-   text-align: center;
-   margin-bottom: 5%;
+    line-height: 1.5;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .hotel_footer_horizontal_ul {
@@ -218,9 +306,11 @@ img:hover {
     .about_paragraph {
         flex-direction: column;
     }
+
     .hotel_gallery_reviews {
         flex-direction: column;
     }
+
     #hotel_navigation_list {
         flex-direction: column;
     }
@@ -238,4 +328,17 @@ img:hover {
 
 .time-load-title {
     color: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+#tableContainer {
+    margin-top: 20px;
+    text-align: center;
 }
