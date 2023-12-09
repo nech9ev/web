@@ -41,11 +41,11 @@ document.getElementById('tableForm').addEventListener('submit', function(e) {
   document.getElementById('tableContainer').innerHTML = tableHtml;
   
   var tableParams = {
-    checkInTime: checkInTime,
-    bedType: bedType,
-    checkInDate: checkInDate,
-    checkOutDate: checkOutDate,
-    comments: comments
+    checkInTime,
+    bedType,
+    checkInDate,
+    checkOutDate,
+    comments
   };
   
   localStorage.setItem('tableParams', JSON.stringify(tableParams));
