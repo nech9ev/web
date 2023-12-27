@@ -1,0 +1,29 @@
+#comments {
+    margin-top: 4%;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #F252F7;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.comment h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.comment p {
+    margin: 10px 0;
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
