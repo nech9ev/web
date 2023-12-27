@@ -7,12 +7,15 @@
     <meta name="author" content="Стефан Цвейг">
 
     <title>Отзывы</title>
-    <link rel="icon" type="image/jpeg" href="../images/circle_logo.jpg"/>
+    <link rel="icon" type="image/jpeg" href="../images/circle_logo.jpg" />
 
     <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/reviews.css" rel="stylesheet">
     <script src="../script/load_time_measure.js"></script>
     <script src="../script/active_navigation_item.js"></script>
+    <script src="../script/load_reviews.js"></script>
 </head>
+
 <body>
     <header style="position: sticky; top:0">
         <div class="title_descrition">
@@ -32,6 +35,9 @@
         </div>
     </header>
 
-    <h1>Отзывы отеля Гранд Будапешт</h1>
+    <div class="loader">
+        <img src="../images/loader.gif" alt="Loading.." />
+    </div>
+    <div id="comments"></div>
 
 </body>
